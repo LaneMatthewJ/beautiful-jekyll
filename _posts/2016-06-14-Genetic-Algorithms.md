@@ -11,10 +11,9 @@ Genetic algorithms are those which traverse a search space with a population of 
 * Selection
      * Each chromosome generates a given fitness value via some fitness function. There exist differing methods of selection, but here for the sake of ease, we'll use proportional selection. Proportional Selection selects an individual based upon its probability of selection generated from its fitness function divided by the sum of all fitness functions(population fitness). (Note, the initial population skips this step because it is generated at random)
      
-$ p_{selection} =\frac{f(x_i)}{ \Sigma_{1}^N x }$
 
 
-      ![](/img/geneticalgorithms/Selection.png)
+ ![](/img/geneticalgorithms/Selection.png)
 
 * Crossover
     * Once a new population has been selected from the old, members of this new population are then chosen and crossed with each other. This can be done in a number of ways, we will do it solely through iterating through the population where parents are determined by position within the population (i.e. chromosomes 0 and 1 cross, 2 and 3 cross, etc). Each chromosome pair has a given likelihood of undergoing crossover (usually, $p_{crossover} \approx 0.7$ ). If the probability is hit, then crossover is done by taking portions of the chromosome's alleles and crossing them with each other by generating an arbitrary cutpoint and swapping chromosome data after the cut: 
