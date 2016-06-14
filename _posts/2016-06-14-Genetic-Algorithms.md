@@ -1,6 +1,8 @@
 ---
 layout: post
-title: Genetic Algorithms: One Max!!
+title: Genetic Algorithms!
+subtitle: Genes and stuff with One Max!
+
 ---
 
 This is my first post, how exciting! I figured for it, I'd post about a super rad area of research that I'm playing with: genetic algorithms and evolution programs! 
