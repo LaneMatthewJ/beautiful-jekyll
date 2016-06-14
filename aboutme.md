@@ -4,13 +4,15 @@ title: About me
 subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hello and welcome! My name's Matt Lane. I do things.  
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- Graduate student in Computer Science.
+- Amateur Entomologist by previous profession. 
+- Biologist, Philosopher, and Linguist by Undergraduate Education. 
+- Epicure by... my ability to consume vast swathes of foodstuffs.
 
-What else do you need?
+### Life Story Beyond That? 
 
-### my history
+I, uh, went to undergrad for biology and philosophy while studying latin and music as well. I didn't wind up with any degrees in latin or music, but it was still ultra-delightful, so there's that. I still sing and play and play with languages now, but it's all a bit more dilettantish now. 
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+After a few years in the real world and working at an insectarium/botanical garden, I found myself taking a handful of classes in computer science and math. Turns out it was super fun, and the university offered me money to take classes, so huzzah! There we are. Life story in two paragraphs. Rad. 
