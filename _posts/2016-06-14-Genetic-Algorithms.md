@@ -12,6 +12,8 @@ Genetic algorithms are those which traverse a search space with a population of 
 * Selection
      * Each chromosome generates a given fitness value via some fitness function. There exist differing methods of selection, but here for the sake of ease, we'll use proportional selection. Proportional Selection selects an individual based upon its probability of selection generated from its fitness function divided by the sum of all fitness functions(population fitness). (Note, the initial population skips this step because it is generated at random)
      
+<center> p(x) = (ƒ(x) / ∑ƒ(x)), such that ∑p(x) = 1.  </center>
+     
 
 
  ![](/img/geneticalgorithms/Selection.png)
