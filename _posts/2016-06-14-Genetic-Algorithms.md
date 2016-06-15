@@ -10,7 +10,7 @@ Genetic algorithms are those which traverse a search space with a population of 
 
 
 * Selection
-     * Each chromosome generates a given fitness value via some fitness function. There exist differing methods of selection, but here for the sake of ease, we'll use proportional selection. Proportional Selection selects an individual based upon its probability of selection generated from its fitness function divided by the sum of all fitness functions(population fitness). (Note, the initial population skips this step because it is generated at random)
+     * Each chromosome generates a given fitness value via some fitness function. There exist differing methods of selection, but here for the sake of ease, we'll use tournament selection. Tournament selection selects two individual chromosomes in the population at random and competes them against each other. The winner is then placed into the new population. The winner is chose based upon its probability of selection generated from its fitness function divided by the sum of all fitness functions(population fitness). (Note, the initial population skips this step because it is generated at random)
      
 <center> p(x) = (ƒ(x) / ∑ƒ(x)), such that ∑p(x) = 1.  </center>
      
@@ -37,13 +37,13 @@ With our fitness function, we want to maximize the number of ones in the bitstri
 
 * Selection (Skip this for the first generation!) 
     * For each chromosome, we'll count up all of their alleles. After calculating the fitness functions for all, we add them all up to generate the population fitness. We can then generate the probability of selection for each individual from the p<sub>selection</sub> function above. 
-    * In order easily select an individual out of the population, we generate a "q" value, which is equal to: 
-     <center>  p<sub>selection<sub>i</sub></sub> + ∑<sub>k=0</sub><sup>i</sup> p<sub>selection<sub>k</sub></sub>  </center>
-
-    this way, we can generate a random number uniformly randomly, and have correspond with a given range corresponding to a particular q value. When that corresponding q-value is generated, we then select that individual and place it in the new generation. This is done N times for the size of the population.   
-
     
-    ![](/img/geneticalgorithms/OneMaxFitness.png)
+        ![](/img/geneticalgorithms/OneMaxFitness.png)
+
+    * We now randomly choose two individual chromosomes from the population and compete them against each other. The winner then moves onto a new generation. This is done N times for the size of the population.   
+
+
+![](/img/geneticalgorithms/OneMaxSelection.png)
 
 
 * Crossover
