@@ -31,10 +31,7 @@ Genetic algorithms are those which traverse a search space with a population of 
 
 ## One Max!
 A very well known example of a genetic algorithm is a toy problem known as "One Max" (sometimes "Max One"). The chromosomes are set up as a bit string (i.e. each individual allele within the chromosome is either a "0" or a "1"). The fitness function for One Max is just an addition of all j alleles (i.e. each individual element of the string): 
-$$
-f(x) = \Sigma_{i=1}^j x[i]
-$$
-where $j$ = number of alleles in the chromosome. 
+$f(x) = \Sigma_{i=1}^j x[i]$ where $j$ = number of alleles in the chromosome. 
 
 With our fitness function, we want to maximize the number of ones in the bitstring. We do this by going through the steps above! 
 
