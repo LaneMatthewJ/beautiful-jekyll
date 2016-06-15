@@ -30,16 +30,18 @@ Genetic algorithms are those which traverse a search space with a population of 
 
 
 ## One Max!
-A very well known example of a genetic algorithm is a toy problem known as "One Max" (sometimes "Max One"). The chromosomes are set up as a bit string (i.e. each individual allele within the chromosome is either a "0" or a "1"). The fitness function for One Max is just an addition of all j alleles (i.e. each individual element of the string): $ f(x) = \Sigma_{i=1}^j x[i]$ where $j$ = number of alleles in the chromosome. 
+A very well known example of a genetic algorithm is a toy problem known as "One Max" (sometimes "Max One"). The chromosomes are set up as a bit string (i.e. each individual allele within the chromosome is either a "0" or a "1"). The fitness function for One Max is just an addition of all j alleles (i.e. each individual element of the string): 
+$$
+f(x) = \Sigma_{i=1}^j x[i]
+$$
+where $j$ = number of alleles in the chromosome. 
 
 With our fitness function, we want to maximize the number of ones in the bitstring. We do this by going through the steps above! 
 
 * Selection (Skip this for the first generation!) 
     * For each chromosome, we'll count up all of their alleles. After calculating the fitness functions for all, we add them all up to generate the population fitness. We can then generate the probability of selection for each individual from the $p_{selection}$ function above. 
     * In order easily select an individual out of the population, we generate a "q" value, which is equal to: 
-    {% raw %}
      <center> $ p_{selection_i} + \Sigma_{k=0}^i p_{selection_k} $ </center>
-    {% endraw }
 
     this way, we can generate a random number uniformly randomly, and have correspond with a given range corresponding to a particular q value. When that corresponding q-value is generated, we then select that individual and place it in the new generation. This is done N times for the size of the population.   
 
