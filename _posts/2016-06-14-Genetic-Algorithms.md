@@ -37,7 +37,10 @@ With our fitness function, we want to maximize the number of ones in the bitstri
 * Selection (Skip this for the first generation!) 
     * For each chromosome, we'll count up all of their alleles. After calculating the fitness functions for all, we add them all up to generate the population fitness. We can then generate the probability of selection for each individual from the $p_{selection}$ function above. 
     * In order easily select an individual out of the population, we generate a "q" value, which is equal to: 
+    {% raw %}
      <center> $ p_{selection_i} + \Sigma_{k=0}^i p_{selection_k} $ </center>
+    {% endraw }
+
     this way, we can generate a random number uniformly randomly, and have correspond with a given range corresponding to a particular q value. When that corresponding q-value is generated, we then select that individual and place it in the new generation. This is done N times for the size of the population.   
 
       ![](/img/geneticalgorithms/OneMaxFitness.png)
