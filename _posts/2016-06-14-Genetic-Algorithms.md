@@ -42,7 +42,8 @@ With our fitness function, we want to maximize the number of ones in the bitstri
 
     this way, we can generate a random number uniformly randomly, and have correspond with a given range corresponding to a particular q value. When that corresponding q-value is generated, we then select that individual and place it in the new generation. This is done N times for the size of the population.   
 
-      ![](/img/geneticalgorithms/OneMaxFitness.png)
+    
+    ![](/img/geneticalgorithms/OneMaxFitness.png)
 
 
 * Crossover
