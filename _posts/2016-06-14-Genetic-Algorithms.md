@@ -55,3 +55,5 @@ With our fitness function, we want to maximize the number of ones in the bitstri
     * Just like above, we mutate our chromosomes! 
 * Repeat until a stopping condition is reached. 
     * For One Max, our stopping condition will be when our fitness value equals the number of alleles. 
+
+After enough generations, the population will converge on the best possible answer it could find (which is a bitstring of all 1s). To see the code for this in swift, check out [my github page](https://github.com/LaneMatthewJ/OneMax). 
