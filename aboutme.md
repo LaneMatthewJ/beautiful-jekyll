@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Definitely not a robot.
 ---
 
 Hello and welcome! My name's Matt Lane. I do things.  
