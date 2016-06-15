@@ -19,26 +19,26 @@ Genetic algorithms are those which traverse a search space with a population of 
  ![](/img/geneticalgorithms/Selection.png)
 
 * Crossover
-    * Once a new population has been selected from the old, members of this new population are then chosen and crossed with each other. This can be done in a number of ways, we will do it solely through iterating through the population where parents are determined by position within the population (i.e. chromosomes 0 and 1 cross, 2 and 3 cross, etc). Each chromosome pair has a given likelihood of undergoing crossover (usually, $ p_{crossover} \approx 0.7 $ ). If the probability is hit, then crossover is done by taking portions of the chromosome's alleles and crossing them with each other by generating an arbitrary cutpoint and swapping chromosome data after the cut: 
+    * Once a new population has been selected from the old, members of this new population are then chosen and crossed with each other. This can be done in a number of ways, we will do it solely through iterating through the population where parents are determined by position within the population (i.e. chromosomes 0 and 1 cross, 2 and 3 cross, etc). Each chromosome pair has a given likelihood of undergoing crossover (usually,  p<sub>crossover</sub> ≈ 0.7). If the probability is hit, then crossover is done by taking portions of the chromosome's alleles and crossing them with each other by generating an arbitrary cutpoint and swapping chromosome data after the cut: 
     
       ![](/img/geneticalgorithms/Crossover.png)
     
 * Mutation
-    * Post crossover, each chromosome also has a likelihood to mutate to help explore new possibilities. In order to maintain exploiting the selected chromosomes from earlier, the probability of mutation is typically pretty low, somewhere around $ p_{mutation} \approx 0.1 $. Depending on how your chromosomes are set up, this could be very well be different. All that really needs to get across is that the mutation rate is lower than the crossover rate (we'll talk more about this below). 
+    * Post crossover, each chromosome also has a likelihood to mutate to help explore new possibilities. In order to maintain exploiting the selected chromosomes from earlier, the probability of mutation is typically pretty low, somewhere around  p<sub>mutation</sub> ≈ 0.1 . Depending on how your chromosomes are set up, this could be very well be different. All that really needs to get across is that the mutation rate is lower than the crossover rate (we'll talk more about this below). 
 
       ![](/img/geneticalgorithms/Mutation.png)
 
 
 ## One Max!
 A very well known example of a genetic algorithm is a toy problem known as "One Max" (sometimes "Max One"). The chromosomes are set up as a bit string (i.e. each individual allele within the chromosome is either a "0" or a "1"). The fitness function for One Max is just an addition of all j alleles (i.e. each individual element of the string): 
-$f(x) = \Sigma_{i=1}^j x[i]$ where $j$ = number of alleles in the chromosome. 
+f(x) ∑<sub>i=1</sub><sup>j</sup> x[i] where j = number of alleles in the chromosome. 
 
 With our fitness function, we want to maximize the number of ones in the bitstring. We do this by going through the steps above! 
 
 * Selection (Skip this for the first generation!) 
-    * For each chromosome, we'll count up all of their alleles. After calculating the fitness functions for all, we add them all up to generate the population fitness. We can then generate the probability of selection for each individual from the $p_{selection}$ function above. 
+    * For each chromosome, we'll count up all of their alleles. After calculating the fitness functions for all, we add them all up to generate the population fitness. We can then generate the probability of selection for each individual from the p<sub>selection</sub> function above. 
     * In order easily select an individual out of the population, we generate a "q" value, which is equal to: 
-     <center> $ p_{selection_i} + \Sigma_{k=0}^i p_{selection_k} $ </center>
+     <center>  p<sub>selection<sub>i</sub></sub> + ∑<sub>k=0</sub><sup>i</sup> p<sub>selection<sub>k</sub></sub>  </center>
 
     this way, we can generate a random number uniformly randomly, and have correspond with a given range corresponding to a particular q value. When that corresponding q-value is generated, we then select that individual and place it in the new generation. This is done N times for the size of the population.   
 
