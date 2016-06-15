@@ -18,6 +18,4 @@ I, uh, went to undergrad for biology and philosophy while studying latin and mus
 After a few years in the real world and working at an insectarium/botanical garden, I found myself taking a handful of classes in computer science and math. Turns out it was super fun, and the university offered me money to take classes, so huzzah! There we are. Life story in two paragraphs. Rad. 
 
 Here's a delightful critter:
-<center>
 ![](/img/greenJay.png)
-</center>
