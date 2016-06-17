@@ -30,6 +30,11 @@ Mutation for the ES vector is different from the GA. We can't just flip a bit li
 We'll start with tournament selection. If you thumbed through the last post, you're familiar with this. We'll select N random chromosomes (typically 2 or 3) and tournament them against each other. The winner goes to the next round! 
 ![](/img/geneticalgorithms/TournamentN2.png)
 
+
+Woops - accidentally published this before it was finished. Enjoy unfinished work, friend! I'll be back later tonight to finish it :P 
+
+
+
 ## Proportional Selection
 
 
