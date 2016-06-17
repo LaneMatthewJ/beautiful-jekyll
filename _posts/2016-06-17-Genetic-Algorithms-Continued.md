@@ -3,6 +3,7 @@ layout: post
 title: More Evolution Strategies
 subtitle: More super rad (read: not too boring) methods of Selection!
 ---
+
 ## Evolution Strategies vs. Genetic Algorithms! 
 
 So, I promise this will be super rad. Maybe. Unless you've just stumbled upon this page and are like "Where am I? What is this place? Why do I exist?" etc. Regardless, I figured I should broaden the scope from the last post because it was super ultra narrow  in its scope. It was an incredibly quick and super rudimentary guide to [genetic algorithms](http://lanematthewj.github.io/2016-06-14-Genetic-Algorithms/). Take a gander if you haven't already. 
