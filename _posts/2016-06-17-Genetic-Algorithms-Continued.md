@@ -1,6 +1,6 @@
 ---
 layout: post
-title: More Evolution Strategies!
+title: More Evolution Strategies
 subtitle: More super rad (read: not too boring) methods of Selection!
 ---
 ## Evolution Strategies vs. Genetic Algorithms! 
