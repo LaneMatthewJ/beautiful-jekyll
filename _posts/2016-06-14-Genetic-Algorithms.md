@@ -24,7 +24,7 @@ Genetic algorithms are those which traverse a search space with a population of 
       ![](/img/geneticalgorithms/Crossover.png)
     
 * Mutation
-    * Post crossover, each chromosome also has a likelihood to mutate to help explore new possibilities. In order to maintain exploiting the selected chromosomes from earlier, the probability of mutation is typically pretty low, somewhere around  p<sub>mutation</sub> ≈ 0.1 . Depending on how your chromosomes are set up, this could be very well be different. All that really needs to get across is that the mutation rate is lower than the crossover rate (we'll talk more about this below). 
+    * Post crossover, each chromosome also has a likelihood to mutate to help explore new possibilities. In order to maintain exploiting the selected chromosomes from earlier, the probability of mutation is typically pretty low, somewhere around  p<sub>mutation</sub> ≈ 1 / bitstring length (so for a bitstring of 10, p<sub>mutation</sub> = 0.1). Depending on how your chromosomes are set up, this could be very well be different. All that really needs to get across is that the mutation rate is lower than the crossover rate (we'll talk more about this below). 
 
       ![](/img/geneticalgorithms/Mutation.png)
 
